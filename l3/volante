@@ -1,0 +1,84 @@
+//1. flex-direction cn valore di default
+#container{
+  background-color: #ddd;
+  min-height: 300px;
+  display: flex;
+  flex-direction: row;
+}
+
+//2. flex-direction cn valore column
+#container{
+  background-color: #ddd;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+// 3. Presentiamo la proprieta' flex-wrap
+#container{
+  background-color: #ddd;
+  min-height: 300px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+}
+
+.ele{ min-width: 150px; }
+
+//4. Presentiamo la proprieta' flex-flow
+#container{
+	background-color: #ddd;
+	min-height: 300px;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+//5. Presentiamo la proprieta' order
+.ele1{
+  background-color: red;
+  flex: 1;
+  order: 100;
+}
+
+.ele2{
+  background-color: yellow;
+  flex: 2;
+  order: 500;
+}
+
+.ele3{
+  background-color: green;
+  flex: 1;
+  order: 100;
+}
+
+.ele4{
+  background-color: blue;
+  flex: 1;
+  order: 100;
+}
+
+//6. Presentiamo la proprieta' order con le unita'
+.ele1{
+  background-color: red;
+  flex: 1;
+  order: 1;
+}
+
+.ele2{
+  background-color: yellow;
+  flex: 2;
+  order: 5;
+}
+
+.ele3{
+  background-color: green;
+  flex: 1;
+  order: 1;
+}
+
+.ele4{
+  background-color: blue;
+  flex: 1;
+  order: 1;
+}

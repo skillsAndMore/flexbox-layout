@@ -1,0 +1,40 @@
+body{
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Elemento Contenitore */
+#container{
+  background-color: #ddd;
+  min-height: 300px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.ele{ min-width: 150px; }
+
+
+/* Elementi Contenuti */
+.ele1{
+  background-color: red;
+  flex: 1;
+  order: 100;
+}
+
+.ele2{
+  background-color: yellow;
+  flex: 2;
+  order: 500;
+}
+
+.ele3{
+  background-color: green;
+  flex: 1;
+  order: 100;
+}
+
+.ele4{
+  background-color: blue;
+  flex: 1;
+  order: 100;
+}
