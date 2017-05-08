@@ -1,0 +1,95 @@
+//1. Sintassi flex
+flex: <'flex-grow'> <'flex-shrink'> <'flex-basis'>
+
+//2. Struttura HTML di Riferimento
+<section id="container">
+  <div class="ele ele2">Elemento 2</div>
+  <div class="ele ele3">Elemento 3</div>
+  <div class="ele ele1">Elemento 1</div>
+  <div class="ele ele4">Elemento 4</div>
+</section>
+
+//3. CSS di Base
+body{
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Elemento Contenitore */
+#container{
+  background-color: #ddd;
+  min-height: 300px;
+}
+
+
+/* Elementi Contenuti */
+.ele{ padding: 10px; }
+
+.ele1{ background-color: red; }
+
+.ele2{ background-color: yellow; }
+
+.ele3{ background-color: green; }
+
+.ele4{ background-color: blue; }
+
+//4. Gli elementi sono in linea
+.ele{
+  padding: 10px;
+  display: inline;
+}
+
+//5. Gli elementi sono in linea e blocco
+.ele{
+  padding: 10px;
+  display: inline-block;
+}
+
+//6. Gli elementi contenuti saranno flex
+#container{
+  background-color: #ddd;
+  min-height: 300px;
+  display: flex;
+}
+
+//7. La Proprieta' flex-basis
+.ele{
+  flex-basis: 20%;
+}
+
+//8. La Proprieta' flex-grow uguale
+.ele{
+  flax-basis: 20%;
+  flex-grow: 1;
+}
+
+//9. La Proprieta' flex-grow diverse
+.ele{ flex-basis: 20%; }
+
+.ele1{ flex-grow: 1; }
+.ele2{ flex-grow: 2; }
+.ele3{ flex-grow: 1; }
+.ele4{ flex-grow: 1; }
+
+//10. La Proprieta' flex-shrink uguale
+.ele{
+  flex-basis: 40%;
+  flex-shrink: 1;
+}
+
+//11. La Proprieta' flex-shrink diverso
+.ele{ flex-basis: 40%; }
+
+.ele1{ flex-shrink: 1; }
+.ele2{ flex-shrink: 2; }
+.ele3{ flex-shrink: 1; }
+.ele4{ flex-shrink: 1; }
+
+//12. Proprieta' flex
+.ele{ flex: 1 1 20%; }
+
+//13. Proprieta' flex unico valore
+.ele1{ flex: 1; }
+.ele2{ flex: 2; }
+.ele3{ flex: 1; }
+.ele4{ flex: 1; }
