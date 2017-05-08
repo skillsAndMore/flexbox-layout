@@ -1,0 +1,16 @@
+/*
+  Più che regole per modificare il layout, questo sarebbe un ottimo
+  posto per inserire alcuni effetti al tuo sito. Dico questo perché
+  a queste risoluzioni si trovano i computer che molto probabilmente
+  saranno ben più potenti dei tablet e degli smartphone.
+
+  Alcune idee:
+    - animare il logo in entrata
+    - aggiungere sezioni
+    - aggiungere immagini più grandi
+*/
+
+#container{
+  main{ @include flex(2.5); }
+  aside{ @include flex(1); }
+}

@@ -1,0 +1,23 @@
+/*
+	In questo file verranno inseriti tutti i codici di base per
+	applicare le regole di base che verranno applicate a qualsiasi
+	risoluzione.
+*/
+
+body{
+	background-color: #eee;
+}
+
+#container{
+	margin: 0 20px;
+}
+
+/* Nascondo la Sezione Hero negli schermi piccoli */
+#hero{
+	display: none;
+	padding: 0 20px;
+}
+
+main article{
+	background-color: #fff;
+}

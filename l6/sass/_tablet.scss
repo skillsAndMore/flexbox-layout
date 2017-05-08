@@ -1,0 +1,39 @@
+/*
+  In questo file inserisco le regole che mi permettono di
+  dare struttura al layout del sito per misure maggiori di 600px
+  ma sempre inferiori a 993px.
+
+  Questo mi permetterà di far visualizzare #hero e di aggiungere
+  le colonne.
+*/
+
+#hero{
+  @include display-flex;
+
+  .feature{
+    @include flex(1);
+    margin-bottom: 20px;
+    text-align: center;
+    img{
+      margin: 0 auto;
+
+    }
+  }
+}
+
+#container{
+  @include display-flex;
+  @include flex-direction( row );
+
+  main{
+    @include flex(2);
+
+    article{
+      padding: 10px;
+    }
+  }
+
+  aside{
+    @include flex(1);
+  }
+}

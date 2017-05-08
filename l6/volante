@@ -1,0 +1,114 @@
+//1. Come catturare le varie risoluzioni
+@media (max-width: 600px){
+  /*
+    Regole per smartphone
+  */
+}
+
+@media (min-width: 600px and max-width: 993px){
+  /*
+    Regole per tutti gli schermi con una risoluzione
+    compresa tra i 600px e i 993px
+  */
+}
+
+@media (min-width: 993px){
+  /*
+    Regole per tutti gli schermi con risoluzione
+    superiore ai 993px
+  */
+}
+
+//2. Un sistema responsive con il mobile first
+/* Regole di Base */
+
+/*
+  Senza utilizzare alcun media query è possibile inserire
+  le regole che andranno applicate indipendentemente dalla
+  risoluzione dello schermo.
+
+  In questo contesto si potrebbe pensare di applicare il
+  Reset, impostare colori di sfondo, grandezze dei titoli...
+*/
+
+@media (min-width: 600px){
+  /* Regole Tablet */
+
+  /*
+    Con queste regole vado ad identificare direttamente gli
+    schermi che sono maggiori di 600px e gli applico le regole
+    CSS.
+
+    Questo perché tutte le regole per gli schermi inferiori
+    a questa risoluzione verranno applicate automaticamente
+    dalle "Regole di Base"
+  */
+}
+
+@media (min-width: 993px){
+  /* Regole Desktop */
+
+  /*
+    Adesso che abbiamo identificato i dispositivi con risoluzioni
+    inferiori possiamo aggiungere tutte le regole che possono
+    essere applicate in ambienti desktop.
+
+    Se non lo hai già fatto, è un'ottima opportunità per
+    inserire una griglia ;)
+  */
+}
+
+//3. Codice di style.scss
+
+//Importo il codice di reset
+@import 'reset';
+
+//Importo il codice base
+@import 'base';
+
+//Importo il codice per i tablet
+@media (min-width: 600px){
+  @import 'tablet';
+}
+
+//Importo il codice per i desktop
+@media (min-width: 993px){
+  @import 'desktop';
+}
+
+//4. Codice in _base.scss
+/*
+  In questo file verranno inseriti tutti i codici di base per
+  applicare le regole di base che verranno applicate a qualsiasi
+  risoluzione.
+*/
+
+#container{
+  margin: 0 20px;
+}
+
+/* Nascondo la Sezione Hero negli schermi piccoli */
+#hero{
+  display: none;
+}
+
+//5. Codice in _tablet.scss
+#hero{
+  @include display-flex;
+
+  .feature{ @include flex(1); }
+}
+
+#container{
+  @include display-flex;
+  @include flex-direction( row );
+
+  main{ @include flex(2); }
+  aside{ @include flex(1); }
+}
+
+//6. Codice in _desktop.scss
+#container{
+  main{ @include flex(2.5); }
+  aside{ @include flex(1); }
+}

@@ -1,0 +1,17 @@
+@import 'compass';
+
+//Importo il codice di reset
+@import 'reset';
+
+//Importo il codice base
+@import 'base';
+
+//Importo il codice per i tablet
+@media (min-width: 600px){
+  @import 'tablet';
+}
+
+//Importo il codice per i desktop
+@media (min-width: 993px){
+  @import 'desktop';
+}
