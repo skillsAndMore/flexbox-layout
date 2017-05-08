@@ -1,0 +1,55 @@
+//1. justify-content center
+#container{
+  display: flex;
+  flex-flow: raw wrap;
+  justify-content: center;
+}
+
+//2. justify-content flex-end
+#container{
+  display: flex;
+  flex-flow: raw wrap;
+  justify-content: flex-end;
+}
+
+//3. justify-content space-between
+#container{
+  display: flex;
+  flex-flow: raw wrap;
+  justify-content: space-between;
+}
+
+//4. justify-content space-around
+#container{
+  display: flex;
+  flex-flow: raw wrap;
+  justify-content: space-around;
+}
+
+//5. align-items flex-end
+#container{
+  display: flex;
+  flex-flow: raw wrap;
+  align-items: flex-end;
+}
+
+//6. align-items center
+#container{
+  display: flex;
+  flex-flow: raw wrap;
+  align-items: center;
+}
+
+//7. align-content flex-end
+#container{
+  display: flex;
+  flex-flow: raw wrap;
+  align-content: flex-end;
+}
+
+//8. align-self flex-end
+#container{
+  display: flex;
+  flex-flow: raw wrap;
+  align-self: flex-end;
+}

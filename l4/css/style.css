@@ -1,0 +1,36 @@
+body{
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Elemento Contenitore */
+#container{
+  background-color: #ddd;
+  min-height: 300px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.ele{ 
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin: 10px;
+}
+
+
+/* Elementi Contenuti */
+.ele1 h2{
+  color: red;
+}
+
+.ele2 h2{
+  color: orange;
+}
+
+.ele3 h2{
+  color: green;
+}
+
+.ele4 h2{
+  color: blue;
+}
