@@ -1,0 +1,37 @@
+//1. flexbox() mixin per cross-browser
+.riga {
+  /* Versione 1 */
+  @include flexbox( (
+    display: box,
+    box-orient: vertical
+    ),
+  $version: 1);
+  /* Versione 2 */
+  @include flexbox( (
+    display: flexbox,
+    flex-direction: row
+    ),
+  $version: 2);
+  /* Versione 3 */
+  @include flexbox( (
+    display: flex,
+    flex-direction: row
+    )
+  );
+}
+
+//2. impostazioni testata
+header{
+  @include display-flex;
+  @include flex-direction( row );
+}
+
+//3. Impostazioni contenuti
+header{
+  @include display-flex;
+  @include flex-direction( row );
+
+  img{ @include flex( .5 0 110px ); }
+  nav{ @include flex( 1 0 250px ); }
+  .search{ @include flex( .5 0 100px ); }
+}

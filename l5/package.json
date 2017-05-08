@@ -1,0 +1,16 @@
+{
+  "name": "fx_lezione_5",
+  "version": "1.0.0",
+  "description": "Test di creazione layout flexbox",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrea Barghigiani",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-compass": "^1.0.1",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}

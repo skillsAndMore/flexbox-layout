@@ -1,0 +1,30 @@
+@import "compass";
+@import "compass/reset";
+
+header, footer{
+	background-color: #43a047;
+	height: 150px;
+}
+
+section{
+	background-color: #fff59d;
+	height: 550px;
+}
+
+footer{
+	background-color: #ef5350;
+}
+
+img{ background-color: #a5d6a7; }
+nav{ background-color: #e8f5e9; }
+.search{ background-color: #66bb6a; }
+
+/* Impostazioni Header */
+header{
+	@include display-flex;
+	@include flex-direction( row );
+
+	img{ @include flex( .5 0 110px ); }
+	nav{ @include flex( 1 0 250px ); }
+	.search{ @include flex( .5 0 100px ); }
+}
